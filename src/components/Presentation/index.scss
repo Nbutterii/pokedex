@@ -1,0 +1,133 @@
+$cardBoxShadow: #d5d6dc;
+$cardBoxShadowHover: #aeaeae;
+$cardBackground: #f3f4f6;
+$colorAddButton: #dc7777;
+$levelTubeBackground: #e4e4e4;
+$levelTubeBoxShadow: #d4d4d4;
+$levelTubeValueBackground: #f3701a;
+$bottomBarBackground: #ec5656;
+$bottomBarBoxshadow: #d9333387;
+$bottomBarTextColor: #ffffff;
+$modalOutside: #000000a3;
+$modalContentBoxShadow: #474444;
+$modalContentBackground: #ffffff;
+$searchBoxBorder: #e6e6e6;
+
+  .presentation-container {
+    .presentation-topic {
+      text-align: center;
+      font-size: 40px;
+    }
+
+    .presentation-tabbar {
+      width: 100%;
+      height: 70px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background: $bottomBarBackground;
+      z-index: 0;
+    }
+
+    .presentation-button {
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      left: 0;
+      right: 0;
+      top: -20px;
+      margin: auto;
+      bottom: 20px;
+      background: $bottomBarBackground;
+      font-size: 70px;
+      color: #fff;
+      text-align: center;
+      cursor: pointer;
+    }
+
+    .presentation-navbar {
+      height: 600px;
+      width: 100%;
+      overflow: hidden;
+      overflow-y: scroll;
+    }
+
+    .presentation-card {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      flex-flow: wrap;
+      justify-content: flex-start;
+    }
+
+    .presentation-card-bg {
+      width: 46%;
+      height: 260px;
+      background-color: $levelTubeBackground;
+      margin: 20px;
+      box-sizing: border-box;
+      border: 1px solid $cardBoxShadow;
+    }
+    
+    .presentation-card-bg:hover {
+      box-shadow: 0 3px 6px $levelTubeBoxShadow, 0 3px 6px $levelTubeBoxShadow;
+    }
+
+    .presentation-card-bg .presentation-cancle {
+      font-size: 30px;
+      visibility: hidden;
+      display: flex;
+      justify-content: flex-end;
+      margin-right: 10px;
+      color: $colorAddButton;
+      cursor: pointer;
+    }
+  
+    .presentation-card-bg:hover .presentation-cancle {
+      visibility: visible;
+    }
+
+    .presentation-card-scale {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      height: 100%;
+    }
+
+    .presentation-card-box {
+      align-items: center;
+      display: flex;
+      justify-content: center;
+    }
+
+    .presentation-img {
+      max-width: 70%;
+      height: auto;
+    }
+
+    .presentation-name {
+      display: block;
+      justify-content: flex-start;
+      font-family: Gaegu;
+      font-size: 30px;
+      margin-top: -18px;
+    }
+  
+    .presentation-name span {
+      visibility: visible;
+      display: flex;
+      justify-content: flex-end;
+      margin-right: 30px;
+      margin-top: 2px;
+      color: $colorAddButton;
+      cursor: pointer;
+    }
+
+    .presentation-abilities {
+      display: flex;
+      justify-content: flex-start;
+      margin: 10px 0px;
+    }
+  }

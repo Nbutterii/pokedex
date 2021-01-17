@@ -1,5 +1,7 @@
-import React, { Component } from 'react'
-import './App.css'
+import React, { Component } from 'react';
+import Presentation from './components/Presentation';
+import { Provider } from 'react-redux';
+import { store } from './store'
 
 const COLORS = {
   Psychic: "#f8a5c2",
@@ -14,14 +16,17 @@ const COLORS = {
   Colorless: "#FFF",
   Fire: "#eb4d4b"
 }
-
 class App extends Component {
   render() {
     return (
-      <div className="App">
-      </div>
-    )
+      <Provider store={store}>
+        <Presentation />
+      </Provider>
+    );
   }
 }
 
 export default App
+
+
+

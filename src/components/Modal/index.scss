@@ -1,0 +1,154 @@
+$cardBoxShadow: #d5d6dc;
+$cardBoxShadowHover: #aeaeae;
+$cardBackground: #f3f4f6;
+$colorAddButton: #dc7777;
+$levelTubeBackground: #e4e4e4;
+$levelTubeBoxShadow: #d4d4d4;
+$levelTubeValueBackground: #f3701a;
+$bottomBarBackground: #ec5656;
+$bottomBarBoxshadow: #d9333387;
+$bottomBarTextColor: #ffffff;
+$modalOutside: #000000a3;
+$modalContentBoxShadow: #474444;
+$modalContentBackground: #ffffff;
+$searchBoxBorder: #e6e6e6;
+
+  .modal-container-head{
+    .modal-container {
+      z-index: 1050;
+      position: fixed;
+      border: 1px solid lightgray;
+      border-radius: 6px;
+      background: white;
+      width: 65%;
+      min-height: 85%;
+      left: 37%;
+      top: 12%;
+      margin-left: -300px;
+      display: none;
+    }
+    
+    .modal-container.modal-container-active {
+      display: block;
+    }
+
+    .modal-background {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba($modalOutside, 0.6);
+      z-index: 1040;
+      display: none;
+    }
+    
+    .modal-background.modal-background-active {
+      display: block;
+    }
+
+    .modal-container-search {
+      margin: 5px;
+      box-shadow: 0 1px 1px $levelTubeBoxShadow;
+    }
+
+    .modal-container-search input {
+      width: 100%;
+      padding: 10px;
+      font-size: 24px;
+      font-family: Gaegu;
+      color: #444;
+      box-sizing: border-box;
+      outline: none;
+    }
+    
+    .modal-search-label {
+      position: relative;
+    }
+
+    .modal-search-box {
+      border: 1px solid $searchBoxBorder;
+    }
+
+    .modal-search-input {
+      width: 40px;
+      height: 40px;
+      position: absolute;
+      top: -10px;
+      right: 8px;
+    }
+
+    .modal-nav {
+      height: 600px;
+      width: 100%;
+      overflow: hidden;
+      overflow-y: scroll;
+    }
+
+    .modal-card-bg {
+      background-color: $levelTubeBackground;
+      margin: 20px;
+      box-sizing: border-box;
+      border: 1px solid $cardBoxShadow;
+    }
+      
+    .modal-card-bg:hover {
+      box-shadow: 0 3px 6px $levelTubeBoxShadow, 0 3px 6px $levelTubeBoxShadow;
+    }
+
+    .modal-card-bg .modal-add {
+      font-size: 30px;
+      visibility: hidden;
+      display: flex;
+      justify-content: flex-end;
+      margin-right: 10px;
+      color: $colorAddButton;
+      cursor: pointer;
+      margin: 5px;
+    }
+    
+    .modal-card-bg:hover .modal-add {
+      visibility: visible;
+    }
+
+    .modal-card-scale {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      height: 100%;
+    }
+
+    .modal-card-box {
+      align-items: center;
+      display: flex;
+      justify-content: center;
+    }
+
+    .modal-img {
+      max-width: 50%;
+      height: auto;
+    }
+
+    .modal-name {
+      display: block;
+      justify-content: flex-start;
+      font-family: Gaegu;
+      font-size: 30px;
+      margin-top: -18px;
+    }
+  
+    .modal-name span {
+      visibility: visible;
+      display: flex;
+      justify-content: flex-end;
+      margin-right: 30px;
+      margin-top: 2px;
+      color: $colorAddButton;
+      cursor: pointer;
+    }
+
+    .modal-abilitie {
+      display: flex;
+      justify-content: flex-start;
+      margin: 10px 0px;
+    }
+  }
